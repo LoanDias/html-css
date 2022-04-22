@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="brasil.ico.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011</title>
+</head>
+<body>
+    <h1>Imagens Flexíveis, Audios e Videos</h1>
+    <picture>
+        
+        <source media="(max-width: 550px)" srcset="imagens/foto-p.png" type="image/png">       
+        <source media="(max-width: 750px)" srcset="imagens/foto-mp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem Flexível">
+    </picture>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="media/audio-mp3.mp3" type="audio/mepg">
+        <source src="media/audio-ogg.ogg" type="audio/ogg">
+        <source src="media/audio-wav.wav" type="image/wav">
+        <p>Seu navegador não suporta audio <a href="media/audio-mp3.mp3" download="audio-mp3.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <video width="600px" poster="videos/thumbvideo.png" controls autoplay>
+        <source src="videos/pode-ser-mp4.mp4" type="video/mp4">
+        <source src="videos/pode-ser-webm.webm" type="video/webm">
+        <source src="videos/pode-ser-ogv.ogv" type="video/ogg">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DjOSM72cYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

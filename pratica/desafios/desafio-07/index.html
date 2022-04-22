@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Voce pode ampliar ou desampliar a tela para variações de tamanho da imagem.</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/jap-girls-450.jpg" type="image/jpeg">
+        <source media="(max-width: 750px)" srcset="imagens/jap-girls-650.jpg" type="image/jpeg">
+        <source media="(max-width: 850px)" srcset="imagens/jap-girls-800.jpg" type="image/jpeg">
+        <img src="imagens/jap-girls-1080.jpg" alt="image/jpeg">
+    </picture>
+</body>
+</html>
