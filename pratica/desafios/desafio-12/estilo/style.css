@@ -29,7 +29,7 @@ header > h1 {
     padding-top: 35px;
     text-transform: uppercase;
     font-family: var(--fonte03);
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 header > p {
@@ -53,6 +53,10 @@ section {
     padding-left: 30px;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -61,16 +65,30 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgba(0, 0, 0, 0.342);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-family: var(--fonte02);
     font-size: 3.5vw;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.377);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('../imagens/background005.jpg');
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.096);
+    background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 8px black;
 }
 
 footer {
