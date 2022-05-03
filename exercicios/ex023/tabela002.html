@@ -20,6 +20,13 @@
             text-align: center;
         }
 
+        caption {
+            background-color: gray;
+            padding: 10px;
+            border: 1px solid black;
+            color: white;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 3px;           
@@ -40,12 +47,13 @@
     </style>
 </head>
 <body>
-    <h1>Tabelas Grandes</h1>
+    <h1>OBS: Fiz o efeito zebrado antes de conhecer o :nth-child()</h1>
     <table>
+        <caption><strong>População Brasil</strong></caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
-            <th>% da polulação</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col">% da polulação</th>
         </thead>
         <tbody>
             <tr class="impar">
@@ -185,7 +193,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total População</th>
+            <th scope="row">Total População</th>
             <td class="num"><strong>220.445.776</strong></td>
             <td class="porc"><strong>100%</strong></td>
         </tfoot>
