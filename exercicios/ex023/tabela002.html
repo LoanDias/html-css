@@ -13,11 +13,20 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
         }
+
         thead, tfoot {
-            background-color: rgb(34, 33, 33);
+            background-color: #222121;
             color: white;
             text-align: center;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #222121;
         }
 
         caption {
